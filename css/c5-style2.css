@@ -1,0 +1,85 @@
+.header {
+  width: 300px;
+  height: 200px;
+  border: 1px solid red;
+  position: relative;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background: black;
+  position: absolute;
+  /* can set nagtive number */
+  right: 0;
+  bottom: -10px;
+  /* the number is biger then the level is higher */
+  z-index: 10;
+}
+
+.box2 {
+  width: 100px;
+  height: 100px;
+  background: pink;
+  position: absolute;
+  /* can set nagtive number */
+  right: -40px;
+  bottom: -10px;
+  z-index: 9;
+}
+
+/* practice float and position */
+.productList {
+  width: 600px;
+}
+
+.productList .sale {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: red;
+  color: white;
+  /* padding-left: 5px;
+  padding-bottom: 5px; */
+  padding: 5px;
+}
+
+.productList img {
+  width: 100%;
+}
+.productList li {
+  position: relative;
+  float: left;
+  width: 128px;
+  height: 200px;
+  border: 1px solid black;
+  /* remember box model to set width */
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.productList li h2 {
+  font-weight: bold;
+  color: blue;
+  margin-bottom: 20px;
+}
+
+.productList li span {
+  font-weight: bold;
+  color: red;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+/* position: fixed */
+.box3 {
+  height: 150px;
+  width: 150px;
+  background: black;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}

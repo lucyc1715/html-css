@@ -1,0 +1,204 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+/* start css reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* end css reset */
+
+/* Float 並排 */
+.wrap {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.box {
+  width: 200px;
+  height: 50px;
+  background: black;
+  float: left;
+}
+
+.box-2 {
+  width: 800px;
+  height: 50px;
+  background: pink;
+  float: left;
+}
+
+.header {
+  height: 150px;
+  background: red;
+  margin-bottom: 20px;
+}
+
+.logo {
+  margin: 10px;
+  float: left
+}
+
+.topmenu {
+  float: right;
+  margin-top: 50px;
+  margin-right: 20px;
+}
+
+.topmenu li {
+  float: left;
+  margin-right: 20px;
+}
+
+.topmenu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.main {
+  margin-bottom: 20px;
+}
+
+.menu {
+  width: 180px;
+  background: black;
+  color: #fff;
+  float: left;
+  padding: 10px 10px 10px 10px;
+  margin-right: 10px;
+}
+
+.content {
+  width: 680px;
+  margin-right: 10px;
+  background: pink;
+  height: 50px;
+  float: left;
+}
+
+.aside {
+  width: 100px;
+  float: left;
+  background: blue;
+  color: #fff
+}
+
+/* 清除全部的float */
+.clearfix {
+  clear: both;
+}
+
+/* menu, content 用float above element */
+.footer {
+  height: 80px;
+  background: gray;
+}

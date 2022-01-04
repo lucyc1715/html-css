@@ -1,0 +1,43 @@
+.play th, .play td {
+  /* border: 1px solid black; */
+  border-top: 1px solid black;
+  border-bottom: 1px solid #000;
+}
+
+.play th {
+  padding: 10px;
+  background: green;
+  color: white;
+}
+
+.play td {
+  padding: 10px;
+  
+}
+
+.f-red {
+  color: green;
+}
+
+.general-use-input{
+  border: 3px solid blue;
+  color: red;
+  border-radius: 10px;
+  background-color: aquamarine;
+  padding: 5px 10px;
+  font-size: 16px;
+  width: 250px;
+}
+
+.type-btn {
+  background: green;
+  color: white;
+  border: 1px solid red;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.type-btn:hover {
+  background-color: #000;
+}

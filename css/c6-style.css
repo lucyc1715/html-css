@@ -1,0 +1,57 @@
+/* set fixed w and h if you use background-image */
+.box {
+  width: 800px;
+  /* height: 500px; */
+  background-image: url("../assets/test.jpg");
+  background-repeat: repeat-x;
+  background-color: #afc0da;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+  background-image: url("../assets/simtree.png");
+  background-repeat: repeat-x;
+  background-color: red;
+  background-position: 90% 90%;
+}
+
+.box2 h2 {
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.box2 {
+  width: 200px;
+  height: 300px;
+  background-image: url("../assets/simtree.png");
+  /* 製作圖片漸層 */
+  background-repeat: repeat-x;
+}
+
+.box2 h4 {
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.header h1 {
+  float: left;
+}
+
+.header h1 a {
+  background-image: url(../assets/simtree.png);
+  width: 73px;
+  height: 73px;
+  display: block;
+  /* 圖片替代文字 */
+  /* 首行縮排 */
+  text-indent: 101%;
+  /* 超出div距離就會消失*/
+  overflow: hidden;
+  /* 東西都在第一行上面, 不斷行 */
+  white-space: nowrap;
+}

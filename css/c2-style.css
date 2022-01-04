@@ -1,0 +1,80 @@
+/* type of selector */
+/* html selector */
+h1 {
+  color: blue;
+  font-size: 40px;
+}
+
+p {
+  color: black;
+  font-size: 20px;
+}
+
+a {
+  color: pink;
+}
+
+/* 擬態選擇器 */
+/* 常用在a標籤,但所有html標籤都可以用 */
+/* 其他標籤互動效果常用javascript控制 */
+a:hover {
+  color: blue;
+  font-size: 20px;
+}
+
+/* 按住狀態 */
+a:active {
+  color: black;
+}
+
+h1:hover {
+  color: red;
+}
+
+/* highly use */
+/* class selector */
+/* use in custom style */
+.p-style {
+  color: #757575;
+}
+
+.a-style {
+  font-size: 30px;
+}
+
+.li-style {
+  color: blueviolet;
+  font-size: 20px;
+}
+
+/* improve layout of paragraph */
+.improve-p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  /* tw freq */
+  text-align: left;
+
+  /* 縮排2字 */
+  text-indent: 32px;
+
+  /* 下底線 underline, 刪除線 line-through */
+  text-decoration: underline;
+
+  /* 字距 但很少用 */
+  letter-spacing: 2px;
+}
+
+/* 線條設定 border*/
+h2 {
+  /* 粗細 樣式 顏色 */
+  /* 樣式- 實心 solid, 虛線 dashed, 原點虛線 dotted */
+  border-left: 5px solid blue;
+  border-bottom: 5px solid red;
+  border-top: 5px solid pink;
+  border-right: 5px solid black;
+}
+
+img {
+  border: 5px solid black;
+}

@@ -1,0 +1,29 @@
+.box {
+  height: 150px;
+  width: 150px;
+  /* set line-height as same as height that it can be in the middle */
+  line-height: 150px;
+  background: black;
+  margin: 10px;
+  /* border-radius: 50%; */
+  border-radius: 50px 0 50px 0;
+  border: 10px solid blue;
+  text-align: center;
+  color: white;
+}
+
+.box2 {
+  width: 1002px;
+  height: 1002px;
+  /* from head to toe */
+  /* background: linear-gradient(#000,red); */
+  background: linear-gradient( );
+}
+
+.box3 {
+  height: 200px;
+  width: 200px;
+  background: green;
+  /* x, y, blur ,color of shadow */
+  box-shadow: 5px 5px 8px pink;
+}

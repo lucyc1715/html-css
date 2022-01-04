@@ -1,0 +1,115 @@
+/* div */
+.a-red {
+  color: red;
+}
+
+a-blue {
+  color: blue;
+}
+
+/* 後代選擇器 */
+.div-s1 a {
+  color: red;
+}
+
+.div-s1 h1 {
+  font-size: 30px;
+}
+
+.div-s1 .content {
+  font-weight: bold;
+}
+
+
+.div-s2 a {
+  color: blue;
+}
+
+/* margin */
+.box {
+  border: 5px solid blue;
+  width: 300px;
+
+  /* padding 產生留白 */
+  padding: 30px;
+}
+
+.box p {
+  margin-bottom: 30px;
+}
+
+.box h2 {
+  color: brown;
+}
+
+/* box model */
+.box-mod {
+  background: black;
+  width: 300px;
+
+
+  /* 會被列入實際的寬度和高度 */
+  padding: 50px;
+  border: 10px solid red;
+
+  /* 不會被列入實際寬高 */
+  margin-bottom: 30px;
+
+  color: white;
+}
+
+/* 全部的標籤都可以吃到  */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* box-sizing auto calculate*/
+.box-s {
+  width: 50px;
+  height: 50px;
+  border: 10px solid blue;
+  background: black;
+
+  /* content-box: padding+border 累加*/
+  /* border-box: 不算p b, 只算width, common use */
+  box-sizing: border-box;
+}
+
+
+/* 水平置中 */
+.wrap {
+  margin-left: auto;
+  margin-right: auto;
+  /* margin: 0 auto; */
+  background-color: black;
+  width: 500px;
+  height: 100px;
+}
+
+/* width follow parent class */
+/* height cannot hard code, use padding to leave space */
+.wrap-header {
+  height: 50px;
+  background: red;
+}
+
+.wrap-content {
+  /* height: 100px; */
+  background: blue;
+  padding: 20px;
+}
+
+.wrap-content p {
+  color: white;
+  margin-bottom: 30px;
+}
+
+.wrap-footer {
+  /* height: 50px; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: pink;
+  text-align: center;
+}
