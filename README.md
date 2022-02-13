@@ -3,8 +3,8 @@ Here notes key point in the course
 - [x] C1 - Basic HTML 
 - [x] C2 - CSS common usage
 - [x] C3 - Block an Inline Element
-- [ ] C4 - Flex-layout
-- [ ] C4 - Flex more
+- [x] C4 - Flex-layout
+- [x] C4 - Flex more
 - [x] C5 - Layout I
 - [x] C5 - Layout II
 - [x] C6 - Crop Img
@@ -254,7 +254,44 @@ Nowadays, flexbox is more flexible than float and more and more browser support.
     bottom: 0;
   }
   ```
-
+### 4.2 Flex
+如果item加總寬度超過`外容器`, flex會等比例延伸,縮放
+- display: flex
+會讓item並排,要在`外容器`下這個語法,內元素才能用flex相關的語法
+- flex-direction 決定資訊流方向
+```=css
+flex-direction: {
+    row; //預設值,從左至右,決定軸線
+    row-reverse; //從右至左
+    column; // 上到下
+    column-reverse; //下到上
+}
+```
+- justify-content 主軸對齊
+```=css
+justify-content: {
+    flex-start; //預設值,靠左
+    center; // 置中
+    flex-end; // 靠右
+    space-between; //等比對齊
+    space-around;  //與外距等比對齊
+    space-evenly;
+```
+- flex-wrap 寬度到達時會換行
+```=css
+flex-wrap: {
+    wrap; //寬度到達時會換行
+    no-wrap; // 預設,不會掉下來
+```
+- align-items 交錯軸對齊
+```=css
+flex-wrap: {
+    flex-start;
+    center; //水平置中
+    flex-end;
+    stretch;
+    baseline;
+```
 ##  5. <a name='Chapter5LayoutII-1'></a>Chapter 5 Layout II
 ###  5.1. <a name='background'></a>background
 1. **background-repeat** 
